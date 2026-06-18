@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devadharshini | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0A2647,#144272);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+nav{
+    background:#144272;
+    text-align:center;
+    padding:15px;
+}
+
+nav button{
+    background:none;
+    border:none;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    margin:0 15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav button:hover{
+    color:#A5D7E8;
+}
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:30px auto;
+}
+
+.content-section{
+    display:none;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 3px 12px rgba(0,0,0,0.1);
+    animation:fadeIn 0.5s ease;
+}
+
+#about{
+    display:block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h2{
+    color:#0A2647;
+    margin-bottom:15px;
+    border-bottom:2px solid #ddd;
+    padding-bottom:10px;
+}
+
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#144272;
+    color:white;
+    padding:10px 15px;
+    border-radius:25px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:15px;
+}
+
+a{
+    color:#144272;
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:#0A2647;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+@media(max-width:768px){
+
+    nav button{
+        display:block;
+        margin:10px auto;
+    }
+
+    header h1{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Devadharshini</h1>
+    <p>Java Developer | Web Developer | Problem Solver</p>
+</header>
+
+<nav>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('certifications')">Certifications</button>
+    <button onclick="showSection('contact')">Contact</button>
+</nav>
+
+<div class="container">
+
+<section id="about" class="content-section">
+
+<h2>About Me</h2>
+
+<p>
+I am a Final Year Computer Science and Engineering student with a strong interest in Java Development, Web Development, and Database Management Systems. I am passionate about building user-friendly applications and continuously enhancing my technical and problem-solving skills.
+</p>
+
+<br>
+
+<p>
+I completed a Web Development Internship at Rinex Technology, where I gained practical experience in developing web-based applications. I am eager to apply my knowledge and contribute to innovative software solutions.
+</p>
+
+</section>
+
+<section id="skills" class="content-section">
+
+<h2>Technical Skills</h2>
+
+<div class="skill-box">
+    <div class="skill">Java</div>
+    <div class="skill">HTML5</div>
+    <div class="skill">CSS3</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React.js</div>
+    <div class="skill">DBMS</div>
+    <div class="skill">Web Development</div>
+    <div class="skill">Problem Solving</div>
+    <div class="skill">Git & GitHub</div>
+</div>
+
+</section>
+
+<section id="projects" class="content-section">
+
+<h2>Projects</h2>
+
+<ul>
+
+<li>
+<strong>E-Commerce Website</strong><br>
+Developed an e-commerce website using Java, HTML, CSS, JavaScript, and MySQL. The application allows users to browse products, add items to cart, and place orders online.
+</li>
+
+<li>
+<strong>Online Tutor Management System</strong><br>
+Developed an online tutor management system using Java and MySQL. The application helps manage tutors, students, courses, and class schedules.
+</li>
+
+<li>
+<strong>Personal Portfolio Website</strong><br>
+Developed a personal portfolio website using HTML, CSS, and JavaScript. The website showcases skills, projects, certifications, and contact information.
+</li>
+
+</ul>
+
+</section>
+
+<section id="certifications" class="content-section">
+
+<h2>Certifications</h2>
+
+<ul>
+<li>Google Partner Certification in Web Development</li>
+<li>HP LIFE Certificate in Effective Leadership</li>
+<li>NPTEL Elite Certification in Cloud Computing and Distributed Systems</li>
+</ul>
+
+</section>
+
+<section id="contact" class="content-section">
+
+<h2>Contact</h2>
+
+<p>
+<strong>Email:</strong><br>
+<a href="mailto:devadharshini2866@gmail.com">
+devadharshini2866@gmail.com
+</a>
+</p>
+
+<br>
+
+<p>
+<strong>Phone:</strong><br>
++91 73393 54779
+</p>
+
+<br>
+
+<p>
+<strong>LinkedIn:</strong><br>
+<a href="https://www.linkedin.com/in/devadharshini-g-1039192a4/" target="_blank">
+View LinkedIn Profile
+</a>
+</p>
+
+</section>
+
+</div>
+
+<footer>
+<p>&copy; 2026 Devadharshini. All Rights Reserved.</p>
+</footer>
+
+<script>
+
+function showSection(sectionId){
+
+    let sections =
+    document.querySelectorAll('.content-section');
+
+    sections.forEach(function(section){
+        section.style.display = 'none';
+    });
+
+    document.getElementById(sectionId).style.display = 'block';
+}
+
+</script>
+
+</body>
+</html>
